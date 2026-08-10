@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2021 Population By Ethnic Origin webmap</title>
+    
+    <!-- Calls the map CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Calls MapLibre JS CSS with CDN -->
+    <link rel='stylesheet' href='https://unpkg.com/maplibre-gl@5.8.0/dist/maplibre-gl.css' />
+
+    <!-- Calls OpenSans from GoogleFonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+ 
+    <!-- Defines the map container -->
+    <div id="map"></div>
+
+    <div class="legend">
+        <h4>Population 2021<br>by Ethnic Origin</h4>
+        <label><input type="checkbox" id="en" checked><span class="color-box" style="background-color: #e41a1c;"></span> English</label>
+        <label><input type="checkbox" id="ir" checked><span class="color-box" style="background-color: #377eb8;"></span> Irish</label>
+        <label><input type="checkbox" id="sc" checked><span class="color-box" style="background-color: #4daf4a;"></span> Scottish</label>
+        <label><input type="checkbox" id="ch" checked><span class="color-box" style="background-color: #984ea3;"></span> Chinese</label>
+        <label><input type="checkbox" id="in" checked><span class="color-box" style="background-color: #ff7f00;"></span> Indian</label>
+        <label><input type="checkbox" id="it" checked><span class="color-box" style="background-color: #ffff33;"></span> Italian</label>
+        <label><input type="checkbox" id="ge" checked><span class="color-box" style="background-color: #a65628;"></span> German</label>
+        <label><input type="checkbox" id="fi" checked><span class="color-box" style="background-color: #f781bf;"></span> Filipino</label>
+    </div>
+
+    <!-- Calls MapLibre JS library with CDN -->
+    <script src='https://unpkg.com/maplibre-gl@5.8.0/dist/maplibre-gl.js'></script>
+    
+    <!-- Calls the map JS code -->
+    <script src="main.js"></script>
+
+</body>
+
+</html>
+
+
